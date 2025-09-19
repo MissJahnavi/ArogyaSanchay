@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import healthRecords from "../assets/health record.jpg";
 import reminders from "../assets/reminders.jpg";
-import chatbot from "../assets/chatbot.jpg";
+import chatbot from "../assets/Chatbot.jpg";
 import idCard from "../assets/id-card.jpg";
 
 const slides = [
