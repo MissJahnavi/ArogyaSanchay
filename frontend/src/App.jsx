@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage';
 import SignUp from './components/SignUp';
 import AddRecords from './components/AddRecords';
-import DashBoard from './components/Dashboard';
+import DashBoard from './components/DashBoard';
 import GovernmentDashboard from './components/GovernmentDashboard';
 import HealthIdPage from './components/HealthIdPage';
 import HealthIdForm from './components/HealthIdForm';
