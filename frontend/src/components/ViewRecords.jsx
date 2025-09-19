@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api, { BASE_URL } from "../api";
+import api, { IMAGE_BASE_URL } from "../api";
 
 export default function ViewRecords() {
   const [records, setRecords] = useState([]);
@@ -104,7 +104,7 @@ export default function ViewRecords() {
     
     if (fileUrl) {
       setPdfViewer({
-        url: `${BASE_URL}${fileUrl}`,
+        url: `${IMAGE_BASE_URL}${fileUrl}`,
         title: record.title
       });
       closeAllDropdowns();
@@ -125,7 +125,7 @@ export default function ViewRecords() {
     
     if (fileUrl) {
       const link = document.createElement('a');
-      link.href = `${BASE_URL}${fileUrl}`;
+      link.href = `${IMAGE_BASE_URL}${fileUrl}`;
       link.download = `${record.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}`;
       link.target = '_blank'; 
       document.body.appendChild(link);
@@ -218,7 +218,7 @@ export default function ViewRecords() {
               <div className="flex flex-wrap gap-2 mt-4">
                 {/* Keep original download link if it was working */}
                 {r.fileUrl && (
-                  <a href={`${BASE_URL}${r.fileUrl}`} target="_blank" rel="noopener noreferrer" className="px-2 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 text-sm">Download (Original)</a>
+                  <a href={`${IMAGE_BASE_URL}${r.fileUrl}`} target="_blank" rel="noopener noreferrer" className="px-2 py-1 bg-blue-100 text-blue-700 rounded hover:bg-blue-200 text-sm">Download (Original)</a>
                 )}
                 
                 <button onClick={() => openEditModal(r)} className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 text-sm">Edit</button>
