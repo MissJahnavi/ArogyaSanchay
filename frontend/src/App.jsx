@@ -13,7 +13,7 @@ import LoginPage from './components/LoginPage';
 import PhoneLogin from './components/PhoneLogin';
 import ViewRecords from './components/ViewRecords';
 import HealthIDCard from './components/HealthIdCard';
-import HeatmapsPage from './components/HeatMapsPage';
+import HeatmapsPage from './components/HeatmapsPage';
 import MigrantsList from './components/MigrantsList';
 import NotificationPage from './components/NotificationPage';
 import Home from './components/pages/Home';
